@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CustomView" id="iN0-l3-epB" customClass="CustomView" customModule="AddPin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Delhi Small" translatesAutoresizingMaskIntoConstraints="NO" id="CJT-yg-unR">
+                    <rect key="frame" x="77" y="69" width="239" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="77j-hv-Xbo"/>
+                        <constraint firstAttribute="width" constant="200" id="CPO-Kj-MLe"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="CPO-Kj-MLe"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jF-pD-xZV">
+                    <rect key="frame" x="10" y="294" width="373" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fD2-Ep-9c8">
+                    <rect key="frame" x="10" y="335" width="373" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUE-mC-0iu">
+                    <rect key="frame" x="70" y="376" width="253" height="34.333333333333314"/>
+                    <color key="backgroundColor" red="0.94897466900000005" green="0.3977821171" blue="0.0030263895170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="CJT-yg-unR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="77" id="0nZ-fJ-HXi"/>
+                <constraint firstItem="0jF-pD-xZV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="2wM-fB-k5c"/>
+                <constraint firstItem="tUE-mC-0iu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="70" id="3qW-w7-tU3"/>
+                <constraint firstItem="fD2-Ep-9c8" firstAttribute="top" secondItem="0jF-pD-xZV" secondAttribute="bottom" constant="20" id="4xW-ar-R9V"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="tUE-mC-0iu" secondAttribute="bottom" constant="10" id="F9a-1M-4yc"/>
+                <constraint firstItem="0jF-pD-xZV" firstAttribute="top" secondItem="CJT-yg-unR" secondAttribute="bottom" constant="25" id="HZP-A5-64s"/>
+                <constraint firstItem="fD2-Ep-9c8" firstAttribute="trailing" secondItem="0jF-pD-xZV" secondAttribute="trailing" id="M0b-TU-ij3"/>
+                <constraint firstItem="fD2-Ep-9c8" firstAttribute="leading" secondItem="0jF-pD-xZV" secondAttribute="leading" id="MaE-yr-rJE"/>
+                <constraint firstItem="CJT-yg-unR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="PrF-Gq-3a9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CJT-yg-unR" secondAttribute="trailing" constant="77" id="W2c-Pe-Fb8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tUE-mC-0iu" secondAttribute="trailing" constant="70" id="WZs-Ap-sxO"/>
+                <constraint firstItem="tUE-mC-0iu" firstAttribute="top" secondItem="fD2-Ep-9c8" secondAttribute="bottom" constant="20" id="vRa-ev-GXL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0jF-pD-xZV" secondAttribute="trailing" constant="10" id="xdv-NZ-9W6"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="CJT-yg-unR" id="7CY-ne-9km"/>
+                <outlet property="removeBtn" destination="tUE-mC-0iu" id="SME-po-qpH"/>
+                <outlet property="subTitileLbl" destination="fD2-Ep-9c8" id="ZLi-0g-KUJ"/>
+                <outlet property="titleLbl" destination="0jF-pD-xZV" id="U1D-ju-bAA"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Delhi Small" width="268" height="320"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
